@@ -1,0 +1,33 @@
+
+.home-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.description{
+    max-width: 400px;
+}
+
+.description h1,p{
+    color: rgb(154, 152, 152);
+}
+
+.explore-button{
+    border-radius: 75px;
+    border: none;
+    height:150px;
+    width: 150px;
+    font-size: 20px;
+    padding: 30px;
+    background-color: white;
+    cursor: pointer;
+    margin-left: 150px;
+}
+
+.explore-button:hover{
+    background-color: rgb(207, 203, 203);
+    color: black;
+    font-size: 16px;
+}
