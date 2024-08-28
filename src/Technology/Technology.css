@@ -4,7 +4,7 @@
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: url('../public/assets/technology/background-technology-desktop.jpg');
+    background-image: url('/assets/technology/background-technology-desktop.jpg');
 }
 
 .tech-container{

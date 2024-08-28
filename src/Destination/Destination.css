@@ -1,5 +1,5 @@
 .destination-cover{
-    background-image: url('../public/assets/destination/background-destination-desktop.jpg');
+    background-image: url('/assets/destination/background-destination-desktop.jpg');
     position: fixed;
     top: 0;
     width: 100%;

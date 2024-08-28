@@ -1,5 +1,5 @@
 .root-container{
-    background-image: url('../public/assets/home/background-home-desktop.jpg');
+    background-image: url('/assets/home/background-home-desktop.jpg');
     height: 100vh;
     width: 100%;
     position: fixed;
