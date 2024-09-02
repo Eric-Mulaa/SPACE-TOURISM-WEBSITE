@@ -3,31 +3,56 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin: 12.5rem auto;
+    width: 90%;
 }
 
 .description{
-    max-width: 400px;
+    width: 70%;
 }
 
 .description h1,p{
     color: rgb(154, 152, 152);
 }
 
+.description .paragraph{
+    max-width: 400px;
+}
+
 .explore-button{
-    border-radius: 75px;
+    border-radius: 100%;
+    font-size: 1.05rem;
     border: none;
-    height:150px;
-    width: 150px;
-    font-size: 20px;
-    padding: 30px;
+    height: 8.5em;
+    width: 8.5em;
+    font-size: 1.25rem;
+    padding: 1.9em;
     background-color: white;
     cursor: pointer;
-    margin-left: 150px;
+    margin-left: 5em;
+    
 }
 
 .explore-button:hover{
     background-color: rgb(207, 203, 203);
     color: black;
-    font-size: 16px;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    .home-container{
+        display: flex;
+        flex-direction: column;
+        width: 96%;
+        min-width: 240px;
+        align-items: center;
+        padding: 0px;
+        margin: 18rem auto 0px auto;
+    }
+
+    .explore-button{
+        font-size: 0.75rem;
+        text-align: center;
+        padding: 1.5em;
+    }
 }

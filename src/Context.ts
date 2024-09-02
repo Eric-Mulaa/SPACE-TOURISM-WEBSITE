@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createContext, useContext } from "react";
 
 import handleHomeClick from './Root'
 
@@ -8,10 +8,11 @@ interface handleHomeClick{
 
 export const HomeContext = createContext< handleHomeClick | null>(null)
 
-/*export function useHomeContex(){
+export function useHomeContext(){
     const context = useContext(HomeContext)
-    if(!context){
+    if (!context){
         throw new Error('Home must be used within a HomeContext.Provider')
     }
     return context;
-} */
+}
+

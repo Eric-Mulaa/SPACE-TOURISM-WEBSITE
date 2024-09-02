@@ -1,6 +1,6 @@
 .root-container{
     background-image: url('/assets/home/background-home-desktop.jpg');
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: fixed;
     margin-top: 0;
@@ -12,8 +12,9 @@
     align-items: center;
     position: fixed;
     z-index: 200;
-    left: 60px;
-    right: 60px;
+    width: 70%;
+    left: 15%;
+    right: 15%;
 }
 
 .icon{
@@ -22,9 +23,9 @@
 }
 
 .navbar-icon{
-    height: 75px;
-    font-size: 45px;
-    padding-top: 20px;
+    height: 4.69rem;
+    font-size: 2.8rem;
+    padding-top: 1.25rem;
 
 }
 
@@ -40,7 +41,7 @@
     color: rgba(99, 99, 99, 0.998);
     background-color: rgba(160, 158, 158, 0.881);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: center;
     padding: 0px;
     border: none;
@@ -50,13 +51,51 @@
 
 .link{
     color: white ;
+    font-size: 1rem;
     text-decoration: none;
-    margin-right: 20px;
-    padding: 20px;
+    margin-right: 1.25em;
+    padding: 1.25em;
 }
 .link:hover{
-    border-bottom: 5px solid white;
+    border-bottom: 0.3em solid white;
 }
 .link.active{
-    border-bottom: 5px solid white;
+    border-bottom: 0.3em solid white;
 }
+
+@media screen and (max-width: 480px) { 
+    .navbar{
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        margin: 0px auto;
+    }
+
+    .empty-div{
+        display: none;
+    }
+
+    .links{
+        width: 100% !important;
+        flex-direction: column;
+        background-color: transparent;
+        border: 1px solid rgba(160, 158, 158, 0.881);
+    }
+
+    .link{
+        margin: 0px;
+        font-size: 0.75em;
+    }
+
+    .link.active{
+        background-color: rgba(160, 158, 158, 0.881);
+        border: none;
+        border-radius: 2em;
+    }
+
+    .root-container{
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+  }
